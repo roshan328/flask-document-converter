@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Converter</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Document Converter</h1>
+      <p>Convert DOCX to PDF and PDF to DOCX</p>
+    </header>
+
+    <main class="main-grid">
+      <section class="upload-section">
+        <h2>Upload Your File</h2>
+        <form action="/convert" method="POST" enctype="multipart/form-data">
+          <label for="file">Select File:</label>
+          <input type="file" name="file" required />
+          <label for="conversion_type">Convert:</label>
+          <select name="conversion_type">
+            <option value="docx_to_pdf">DOCX to PDF</option>
+            <option value="pdf_to_docx">PDF to DOCX</option>
+          </select>
+          <button type="submit">Convert</button>
+        </form>
+      </section>
+      <section class="info-section">
+        <h2>How it Works</h2>
+        <p>
+          Upload your DOC or PDF file, and convert it instantly. Quick and easy!
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2024 Document Converter</p>
+    </footer>
+  </body>
+</html>

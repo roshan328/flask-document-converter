@@ -1,0 +1,101 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #42f395;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.header p {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.upload-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label,
+input,
+select,
+button {
+  margin-bottom: 15px;
+}
+
+input[type="file"],
+select,
+button {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+input[type="file"] {
+  background-color: #f8f9fa;
+}
+
+select {
+  background-color: #f8f9fa;
+}
+
+button {
+  background-color: #42f395;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4682b4;
+}
+
+.footer {
+  background-color: #42f395;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+}
